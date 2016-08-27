@@ -195,8 +195,10 @@ int main()
     strcpy(ti,ctime(&t));
     ti+=11;
     ti[9]='\0';
-     /*strcpy(ti,"20:59:00");
-    ti[3]+=3;
+     
+     ///////////////////////if you time is less than 5 : 30 hrs then remove following comment ///////////////////////////
+     //Code For move your time by 5:30 
+    /*ti[3]+=3;
     if(ti[3]>='6')
     {
         ti[3]-=6;
