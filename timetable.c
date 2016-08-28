@@ -235,7 +235,11 @@ int main()
 
     if(strcmp(ti,"17:30:00")>0)
     {st=1;}
-    if(strcmp(day,"Mon")==0)
+    if(strcmp(day,"Sat")==0||strcmp(day,"Sun")==0)
+    {
+            print_day(batc,0,0,ti);
+    }
+    else if(strcmp(day,"Mon")==0)
     {
         if(st==0)
             print_day(batc,0,0,ti);
